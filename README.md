@@ -7,13 +7,13 @@ A simple HTTP API that wraps OpenStreetMap and Valhalla for geocoding and routin
 ### 1. Geocoding
 
 ```
-GET /geocode?q={query}
+GET /nav/geocode?q={query}
 ```
 
 Search for an address, landmark, or point of interest by name.
 
 ```
-POST /geocode
+POST /nav/geocode
 Content-Type: text/plain
 
 123 Main St, Springfield, IL
@@ -88,6 +88,6 @@ Get navigation directions between two points.
 1. Install Go 1.21 or later
 2. Clone this repository
 3. Run `go build`
-4. Start the server: `./mapper`
+4. Start the server: `./fujisuite-server`
 
 The server will start on port 8080 by default. 
