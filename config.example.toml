@@ -1,0 +1,12 @@
+# Mapper configuration file
+
+# Server configuration
+port = ":8080"
+
+# Navigation service configuration
+[nav]
+nominatim_url = "https://nominatim.openstreetmap.org"
+valhalla_url = "http://localhost:8002/route"
+transitland_url = "https://transit.land/api/v2"
+transitland_api_key = "YOUR_API_KEY_HERE"
+user_agent = "Mapper/1.0" 
